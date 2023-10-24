@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "first",
+			"path": "../../../../vue.js/first"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../2-한국알콜산업"
+		}
+	],
+	"settings": {}
+}
