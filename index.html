@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>성수진의 포트폴리오</title>
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'> -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/headerstyle.css">
     <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/portfoliostyle.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/Hamburger.css">
     <link rel="stylesheet" href="css/skillset.css">
+    <link rel="stylesheet" href="css/jsx-65206537.css">
+
     <!-- 슬릭 -->
     <link rel="stylesheet" href="slick/slick.min.js">
 
     <!-- portfolio -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css'><link rel="stylesheet" href="./style.css">
+
     <!-- 구글 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
     <script type="text/javascript">
@@ -38,19 +46,19 @@
                 //scrollTop은 스크롤바의 윗부분 / 2000 위치  / 1500 1.5초
             });
             $(".tabs label:nth-of-type(2)").click(function(){
-                $("html,body").animate({scrollTop:899},1500);
+                $("html,body").animate({scrollTop:900},1500);
                 //scrollTop은 스크롤바의 윗부분 / 2000 위치  / 1500 1.5초
             });
             $(".tabs label:nth-of-type(3)").click(function(){
-                $("html,body").animate({scrollTop:1750},1500);
+                $("html,body").animate({scrollTop:1800},1500);
                 //scrollTop은 스크롤바의 윗부분 / 2000 위치  / 1500 1.5초
             });
             $(".tabs label:nth-of-type(4)").click(function(){
-                $("html,body").animate({scrollTop:2800},1500);
+                $("html,body").animate({scrollTop:2700},1500);
                 //scrollTop은 스크롤바의 윗부분 / 2000 위치  / 1500 1.5초
             });
             $(".tabs label:nth-of-type(5)").click(function(){
-                $("html,body").animate({scrollTop:3000},1500);
+                $("html,body").animate({scrollTop:3600},1500);
                 //scrollTop은 스크롤바의 윗부분 / 2000 위치  / 1500 1.5초
             });
             // 탑버튼클릭시 페이지슬라이딩(평가)
@@ -59,29 +67,129 @@
                 // return false;
             });
             $("div#title .wrap a").click(function(){
-                $("html,body").animate({scrollTop:899},1500);
+                $("html,body").animate({scrollTop:900},1500);
             });
 
             $(".navigation #menuToggle a:nth-of-type(1)").click(function(){
                 $("html,body").animate({scrollTop:0},1500);
             });
             $(".navigation #menuToggle a:nth-of-type(2)").click(function(){
-                $("html,body").animate({scrollTop:899},1500);
+                $("html,body").animate({scrollTop:900},1500);
             });
             $(".navigation #menuToggle a:nth-of-type(3)").click(function(){
-                $("html,body").animate({scrollTop:1750},1500);
+                $("html,body").animate({scrollTop:1800},1500);
             });
             $(".navigation #menuToggle a:nth-of-type(4)").click(function(){
-                $("html,body").animate({scrollTop:2800},1500);
+                $("html,body").animate({scrollTop:2700},1500);
             });
             $(".navigation #menuToggle a:nth-of-type(5)").click(function(){
-                $("html,body").animate({scrollTop:3000},1500);
+                $("html,body").animate({scrollTop:3600},1500);
+            });
+            
+        });
+    </script>
+    <script>
+        // <!-- 헤더스크롤이벤트 -->
+        $(document).ready(function(){
+
+            $().hide;
+
+            var ws=$(window).scrollTop(); // 윈도우창의 스크롤탑값을 가져와서 변수 ws에 저장하시오
+            var headerY=$("header").offset().top; // 헤더의 탑값을 가져와서 변수headerY에 저장하시오 
+            var headerH=$("header").height(); // 헤더의 높이값을 가져와서 변수headerH에 저장하시오
+            var aboutY=$("#about").offset().top-headerY-headerH;
+
+            console.log(ws); // 콘솔창에 변수ws값을 표시해라
+
+
+            $(window).scroll(function(e){ // 윈도우창을 스크롤하면 실행하시오
+                // -1 스크롤시 대메뉴 보이게 안보이게
+                var scrollup = $(window).scrollTop() >= ws;// 윈도우창의 스크롤 탑값이 변수 ws값 보다 크거나 같다.(비교) >> 비교사면 결과값이 true(참) 또는 false(거짓)
+                console.log('scrollup'+scrollup);              
+                ws=$(window).scrollTop(); // 윈도우창의 스크롤 탑값을 가져와서 변수 ws에 저장하시오
+                if(ws>headerY){ // 변수 ws값이 변수 headerY보다 크다면
+                    $("header").addClass("fixed");
+                }
+                if(ws>aboutY){ //변수 ws값이 변수 >aboutY보다 크다면
+                    $("header").addClass("up");
+                }
+                if(ws<headerY){ // 변수 ws값이 변수 headerY보다 작다면
+                    $("header").removeClass("fixed");
+                }
+                if(ws<aboutY){ //변수 ws값이 변수 >aboutY보다 작다면
+                    $("header").removeClass("up");
+                }
+                if(ws>aboutY && scrollup){ //조건이 참이면 && 그리고 and
+                    $("header").addClass("up");
+                }else{
+                    $("header").removeClass("up");
+                }
             });
         });
-
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var elm = ".wheel";
+            $(elm).each(function (index) {
+                // 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    } 
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+                    var moveTop = $(window).scrollTop();
+                    var elmSelecter = $(elm).eq(index);
+                    // 마우스휠을 위에서 아래로
+                    if (delta < 0) {
+                        if ($(elmSelecter).next() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).next().offset().top;
+                            }catch(e){}
+                        }
+                    // 마우스휠을 아래에서 위로
+                    } else {
+                        if ($(elmSelecter).prev() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).prev().offset().top;
+                            }catch(e){}
+                        }
+                    }
+                     
+                    // 화면 이동 0.8초(800)
+                    $("html,body").stop().animate({
+                        scrollTop: moveTop + 'px'
+                    }, {
+                        duration: 800, complete: function () {
+                        }
+                    });
+                });
+            });
+            $("section").unwrap("main");
+            $("section").css("height","100%");
+        }
     </script>
 
 </head>
+
+<!-- 유투브영상 -->
+
+
+<!-- 유투브영상 배경지정 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
+<script>
+    $(document).ready(function(){
+        jQuery( function() {
+            jQuery( '#background' ).YTPlayer();
+        });
+    });
+</script>
+
 <body>
     <header>
         <div class="wrap">
@@ -148,16 +256,30 @@
         </div>
     </header>
     <!-- div#title>h2 -->
-    <div id="title">
+    <div id="title" class="wheel">
         <div class="wrap">
             <h2>2S00</h2>
             <a href="#">
                 scroll
             </a>
+            <div id="background" class="player" data-property="{
+                videoURL: 'https://youtu.be/mcUHURGXIDk',
+                mute: true,
+                showControls: false,
+                useOnMobile: true,
+                quality: 'highres',
+                containment: 'body',
+                loop: true,
+                autoPlay: true,
+                stopMovieOnBlur: false,
+                startAt: 0,
+                opacity: 1
+              }">
+            </div>
         </div>
     </div>
     <main>
-        <section id="about">
+        <section id="about"  class="wheel">
             <div class="wrap">
                 <h2>about</h2>
                 <figure>
@@ -168,9 +290,9 @@
                     <p>‘웹’ 이라는 매체를 통해 서비스와 브랜드를 각인시키고, 이용자에게 좋은 사용자 경험을 제공함으로써 서비스의 가치를 높이고자 하는 UI 개발자 및 퍼블리셔 성수진입니다.<br>탄탄한 코드 위에 감각적인 인터페이스를 그리고 사용하기 쉬운 UI와 기억에 남는 UX를 개발하겠습니다.</p>
                     <h3>성수진</h3>
                     <p>SEONG SOO JIN</p>
-                    <p>나이 23</p>
-                    <p>학력 동서울대학교 정보통신과</p>
-                    <p>수료 내역 이젠 IT컴퓨터 아카데미_[디지털 디자인] ul/ux 웹디자인 with 유튜브동영상 반응형 웹 (스마트혼합)-A</p>
+                    <p><span>나이</span> 23</p>
+                    <p><span>학력</span> 동서울대학교 정보통신과</p>
+                    <p><span>수료</span> 내역 이젠 IT컴퓨터 아카데미_[디지털 디자인] ul/ux 웹디자인 with 유튜브동영상 반응형 웹 (스마트혼합)-A</p>
                     <h4>경력</h4>
                     <ul>
                         <li>2023년</li>
@@ -181,36 +303,36 @@
                 </div>
             </div>
         </section>
-        <section id="skill" class="padding100">
+        <section id="skill" class="padding100 wheel">
             <div class="wrap">
-                <h2 class="h2">skill</h2>
+                <h2 class="h2">Skill & Tools</h2>
 
                 <div class="skillset">
                     <div class="Skill">
-                        <h1>Skill</h1>
-                        <div class="bar front expert" data-skill="HTML5"></div>
+                         <div class="bar front advanced" data-skill="HTML5"></div>
                         <div class="bar front advanced" data-skill="CSS3"></div>
-                        <div class="bar front expert" data-skill="jQuery"></div>
-                        <div class="bar front expert" data-skill="Javascript"></div>
-                        <div class="bar front expert" data-skill="SASS"></div>
-                        <div class="bar front expert" data-skill="웹표준"></div>
-                        <div class="bar front expert" data-skill="웹접근성"></div>
-                        <div class="bar front expert" data-skill="부트스트랩"></div>
-                        <div class="bar front expert" data-skill="워드프레스"></div>
-                        <div class="bar front expert" data-skill="cafe24쇼핑몰구축.관리"></div>
-                        <div class="bar front expert" data-skill="웹사이트최적화"></div>
-                        <div class="bar front expert" data-skill="SEO.검색엔진등록(네이버,구글)"></div>
-                        <div class="bar front expert" data-skill="vue.js"></div>
-                        <div class="bar learning" data-skill="영상편집"></div>
+                        <div class="bar front advanced" data-skill="jQuery"></div>
+                        <div class="bar back basic" data-skill="Javascript"></div>
+                        <div class="bar front advanced" data-skill="SASS"></div>
+                        <div class="bar front advanced" data-skill="웹표준"></div>
+                        <div class="bar back intermediate" data-skill="웹접근성"></div>
+                        <div class="bar back basic" data-skill="부트스트랩"></div>
+                        <div class="bar front advanced" data-skill="워드프레스"></div>
+                        <div class="bar back basic" data-skill="cafe24쇼핑몰구축.관리"></div>
+                        <div class="bar back intermediate" data-skill="웹사이트최적화"></div>
+                        <div class="bar back intermediate" data-skill="SEO.검색엔진등록(네이버,구글)"></div>
+                        <div class="bar back basic" data-skill="vue.js"></div>
+                        <div class="bar back basic" data-skill="영상편집"></div>
+                        <!-- <div class="bar learning" data-skill="영상편집"></div> -->
+                        <!-- <div class="bar front expert" data-skill="웹사이트최적화"></div> -->
                     </div>
                     <div class="Tools">
-                        <h1>Tools </h1>
-                        <div class="bar back basic" data-skill="PHOTOSHOP"></div>
+                        <div class="bar back intermediate" data-skill="PHOTOSHOP"></div>
                         <div class="bar back basic" data-skill="ILLUSTRATOR"></div>
                         <div class="bar back basic" data-skill="VISUAL STUDIO CODE"></div>
                         <div class="bar back basic" data-skill="파이어폭스 검사기"></div>
-                        <div class="bar back basic" data-skill="구글드라이브"></div>
-                        <div class="bar back intermediate" data-skill="카카오오븐"></div>
+                        <div class="bar front advanced" data-skill="구글드라이브"></div>
+                        <div class="bar front advanced" data-skill="카카오오븐"></div>
                         <div class="bar back basic" data-skill="발사믹"></div>
                         <div class="bar back basic" data-skill="프리미어"></div>
                         <div class="bar back basic" data-skill="에펙"></div>
@@ -220,181 +342,200 @@
 
             </div>
         </section>
-
-        <section id="portfolio" class="gallery">
-            <div class="wrap E">
-                <h4>portfolio</h4>
-                <p class="D">저의 작업물들을 만나보세요</p>
-                <div class="wrap F">
-                    <div class="wrap row">
-                        <ul>
-                            <a href="#" class="close"></a>
-                            <li>
-                                <a href="#item01">
-                                    <img src="img/samsung.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#item02">
-                                    <img src="img/samsung-re.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#item03">
-                                    <img src="img/kai.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#item04">
-                                    <img src="img/hitejinro.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#item05">
-                                    <img src="img/cgv.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#item06">
-                                    <img src="img/kristin3.jpg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#item07">
-                                    <img src="img/kristin2.jpg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#item08">
-                                    <img src="img/kristin3.jpg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div> <!-- / row -->
-                                            
-                    <!-- Item 01 -->
-                    <div id="item01" class="port">
-                        <div class="row">
-                            <div class="description">
-                                <h1>samsung</h1>
-                                <p>삼성홈페이지 홈페이지</p>
-                            </div>
-                            <img src="img/samsung.png" alt="">
+        <section id="portfolio" class="gallery  wheel">
+            
+            <div class="wrapper">
+                <h2 class="h2">Portfolio</h2>
+                
+                <div class="card">
+                    <div class="poster"><img src="../개인홈페이지/img/samsung.png" alt="Location Unknown"></div>
+                    <div class="details">
+                        <h1>Location Unknown</h1>
+                        <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">Indie</span>
                         </div>
-                    </div> <!-- / Item 01 -->
-                                            
-                    <!-- Item 02 -->
-                    <div id="item02" class="port">
-                        <div class="row">
-                            <div class="description">
-                                    <h1>samsung</h1>
-                                    <p>삼성홈페이지 리뉴얼 홈페이지</p>
-                            </div>
-                            <img src="img/samsung-re.png" alt="">
-                        </div> <!-- / row -->
-                    </div> <!-- / Item 02 -->
-
-                    <!-- Item 03 -->
-                    <div id="item03" class="port">
-                        <div class="row">
-                            <div class="description">
-                                    <h1>KAI</h1>
-                                    <p>한국알콜산업 홈페이지</p>
-                            </div>
-                            <img src="img/kai.png" alt="">
-                        </div> <!-- / row -->
-                    </div> <!-- / Item 03 -->
-
-                    <!-- Item 04 -->
-                    <div id="item04" class="port">
-                        <div class="row">
-                            <div class="description">
-                                <h1>hitejinro</h1>
-                                <p>화이트진로 홈페이지</p>
-                            </div>
-                            <img src="img/hitejinro.png" alt="">
+                        <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
+                        </p>
+                        <div class="cast">
+                            <h3>Cast</h3>
+                            <ul>
+                                <li><img src="../개인홈페이지 - v2/img/wmd.jpg" alt="Marco Andrews" title="Marco Andrews"></li>
+                            </ul>
                         </div>
-                    </div> <!-- / Item 04 -->
-                                            
-                    <!-- Item 05 -->
-                    <div id="item05" class="port">
-                        <div class="row">
-                            <div class="description">
-                                    <h1>CGV</h1>
-                                    <p>cgv 홈페이지</p>
-                            </div>
-                            <img src="img/cgv.png" alt="">
-                        </div> <!-- / row -->
-                    </div> <!-- / Item 05 -->
-
-                    <!-- Item 06 -->
-                    <div id="item06" class="port">
-                        <div class="row">
-                            <div class="description">
-                                    <h1>CGV</h1>
-                                    <p>cgv 홈페이지</p>
-                            </div>
-                            <img src="../개인홈페이지 - v2/img/cpfl.jpg" alt="">
-                        </div> <!-- / row -->
-                    </div> <!-- / Item 06 -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="poster"><img src="../개인홈페이지/img/samsung-re.png" alt="Location Unknown"></div>
+                    <div class="details">
+                        <h1>Location Unknown</h1>
+                        <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">Indie</span>
+                        </div>
+                        <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
+                        </p>
+                        <div class="cast">
+                            <h3>Cast</h3>
+                            <ul>
+                                <li><img src="../개인홈페이지 - v2/img/wmd.jpg" alt="Marco Andrews" title="Marco Andrews"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="poster"><img src="../개인홈페이지/img/cgv.png" alt="Location Unknown"></div>
+                    <div class="details">
+                        <h1>Location Unknown</h1>
+                        <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">Indie</span>
+                        </div>
+                        <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
+                        </p>
+                        <div class="cast">
+                            <h3>Cast</h3>
+                            <ul>
+                                <li><img src="../개인홈페이지 - v2/img/wmd.jpg" alt="Marco Andrews" title="Marco Andrews"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="poster"><img src="../개인홈페이지/img/kai.png" alt="Location Unknown"></div>
+                    <div class="details">
+                        <h1>Location Unknown</h1>
+                        <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">Indie</span>
+                        </div>
+                        <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
+                        </p>
+                        <div class="cast">
+                            <h3>Cast</h3>
+                            <ul>
+                                <li><img src="../개인홈페이지 - v2/img/wmd.jpg" alt="Marco Andrews" title="Marco Andrews"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="poster"><img src="../개인홈페이지/img/hitejinro.png" alt="Location Unknown"></div>
+                    <div class="details">
+                        <h1>Location Unknown</h1>
+                        <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">Indie</span>
+                        </div>
+                        <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
+                        </p>
+                        <div class="cast">
+                            <h3>Cast</h3>
+                            <ul>
+                                <li><img src="../개인홈페이지 - v2/img/wmd.jpg" alt="Marco Andrews" title="Marco Andrews"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="poster"><img src="https://i.postimg.cc/jjBSrfnQ/poster1-img.jpg" alt="Location Unknown"></div>
+                    <div class="details">
+                        <h1>Location Unknown</h1>
+                        <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">Indie</span>
+                        </div>
+                        <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
+                        </p>
+                        <div class="cast">
+                            <h3>Cast</h3>
+                            <ul>
+                                <li><img src="../개인홈페이지 - v2/img/wmd.jpg" alt="Marco Andrews" title="Marco Andrews"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="poster"><img src="https://i.postimg.cc/jjBSrfnQ/poster1-img.jpg" alt="Location Unknown"></div>
+                    <div class="details">
+                        <h1>Location Unknown</h1>
+                        <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">Indie</span>
+                        </div>
+                        <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
+                        </p>
+                        <div class="cast">
+                            <h3>Cast</h3>
+                            <ul>
+                                <li><img src="../개인홈페이지 - v2/img/wmd.jpg" alt="Marco Andrews" title="Marco Andrews"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="poster"><img src="https://i.postimg.cc/jjBSrfnQ/poster1-img.jpg" alt="Location Unknown"></div>
+                    <div class="details">
+                        <h1>Location Unknown</h1>
+                        <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">Indie</span>
+                        </div>
+                        <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
+                        </p>
+                        <div class="cast">
+                            <h3>Cast</h3>
+                            <ul>
+                                <li><img src="../개인홈페이지 - v2/img/wmd.jpg" alt="Marco Andrews" title="Marco Andrews"></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="contact">
-            <div class="wrap">
-                <h4>contact</h4>
-                <ul class="wrapper">
-                    <a href="">
-                        <li class="icon facebook">
-                        <span class="tooltip">Facebook</span>
-                        <span><i class="fab fa-facebook-f"></i></span>
-                        </li>
+        <section id="contact" class="wheel">
+            <ul>
+                <li>
+                    <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span> - Facebook</span>
                     </a>
-                    <a href="">
-                        <li class="icon twitter">
-                         <span class="tooltip">Twitter</span>
-                        <span><i class="fab fa-twitter"></i></span>
-                        </li>
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span> - Twitter</span>
                     </a>
-                    <a href="https://www.instagram.com/soo.l4/">
-                        <li class="icon instagram">
-                        <span class="tooltip">Instagram</span>
-                        <span><i class="fab fa-instagram"></i></span>
-                        </li>
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <span> - Google</span>
                     </a>
-                    <a href="">
-                        <li class="icon github">
-                        <span class="tooltip">Github</span>
-                        <span><i class="fab fa-github"></i></span>
-                        </li>
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span> - Instagram</span>
                     </a>
-                    <a href="">
-                        <li class="icon youtube">
-                        <span class="tooltip">Youtube</span>
-                        <span><i class="fab fa-youtube"></i></span>
-                        </li>
-                    </a>
-                    <a href="">
-                        <li class="icon mail">
-                            <span class="tooltip">mail</span>
-                            <span><i class="fab fa-mail"></i></span>
-                        </li>
-                    </a>
-                    <a href="../개인홈페이지 - v2/img/KakaoTalk_QR.jpg">
-                        <li class="icon kakao">
-                            <span class="tooltip">kakao</span>
-                            <span><i class="fab fa-kakao"></i></span>
-                        </li>
-                    </a>
-                    <a href="">
-                        <li class="icon call">
-                            <span class="tooltip">H.P</span>
-                            <span><i class="fab fa-call"></i></span>
-                        </li>
-                    </a>
-                </ul>
-            </div>
+              </li>
+            </ul>
         </section>
     </main>
     <aside>
@@ -409,8 +550,8 @@
     </footer>
    
       <!-- portfolio -->
-   
-    <script src="js/script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js'></script>
+    <script src="./script.js"></script>
 
 </body>
 </html>

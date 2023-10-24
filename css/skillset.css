@@ -1,16 +1,10 @@
-#skill body{
+#skill{
+  background-color: initial;
 }
+
 #skill .skillset{
-  border: 3px solid #f3d4d4;
-  border-bottom-width: 3px;
-  border-bottom-style: solid;
-  border-bottom-color: rgb(0, 0, 1);
-  border-collapse: collapse;
-  border-spacing: 0;
-  border-bottom: 0 !important;
   padding: 20px;
-  width: 1600px;
-  background-color: #fff;
+  max-width: 1100px;
   display: flex;
 }
 #skill .skillset h1{
@@ -18,11 +12,11 @@
   font-size: 30px;
 }
 #skill .skillset .Skill{
-  width: 750px;
+  width: 500px;
 }
 #skill .skillset .Tools{
-  width: 750px;
-  margin-left: 50px;
+  margin-left: 100px;
+  width: 500px;
 }
 @keyframes load{
   from {
@@ -46,18 +40,18 @@
 }
 
 .bar{
-  background-color: #EEE;
+  background-color: #FFF;
   padding: 2px;
   border-radius: 15px;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 15px;
   color: #FFF;
   font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  line-height: 2;
 }
 .bar::before{
   content:  attr(data-skill);
-  background-color: #f3d4d4;
+  background-color: #FDFFD1;
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
@@ -67,11 +61,14 @@
   -o-animation: load 2s 0s;
 }
 
-.bar.front::before{
-  background-color: #c32125;
+.bar.advanced::before{
+  background-color: #D3D1FF;
 }
-.bar.back::before{
-  background-color: #c32125;
+.bar.basic::before{
+  background-color: #D1E6FF;
+}
+.bar.intermediate::before{
+  background-color: #C3E6CB;
 }
 .bar.learning::before{
   width: calc(20% - 10px);

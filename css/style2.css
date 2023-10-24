@@ -16,10 +16,14 @@ body {
   color: #262626;
   font-size: 16px;
   line-height: 20px;
+/*   background-color: black; */
+  background-image: url(../img/pjtb.jpg);
 }
 main{
   max-width: 1900px;
   margin: 0 auto;
+  height: 400%;
+  background-color: #f6ebeb;
 }
 main *{
   box-sizing: border-box;
@@ -39,8 +43,7 @@ h2 {
   margin-right: 0px;
   margin-left: 0px;
   padding-bottom: 92px;
-  
-  color: #262626;
+  color: #FF0072;
   font-size: 31px;
   line-height: 35px;
   font-weight: 800;
